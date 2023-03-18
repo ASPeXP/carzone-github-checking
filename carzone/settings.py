@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'multiselectfield',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,5 @@ STATICFILES_DIRS = [
 #media settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
