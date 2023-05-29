@@ -162,6 +162,6 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 # Email setting
 EMAIL_HOST = 'smtp.gmail.com' # เราจะส่งอีเมล์ด้วย smtp ของ Gmail
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ipathsaid@gmail.com'
-EMAIL_HOST_PASSWORD = 'tfwgidmpdosbdwgw'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
