@@ -8134,6 +8134,7 @@ table {
     .sticky-header .navbar-expand-lg .navbar-nav .nav-link {
         color: #fff;
         opacity: 0.9;
+        /* z-index: -1; */
     }
 
     .sh-2 .navbar-expand-lg .navbar-nav .nav-link{
@@ -8149,6 +8150,7 @@ table {
     .sticky-header .open-offcanvas {
         color: #fff;
         display: inline-block;
+        /* z-index: -1; */
     }
 
     .header-shrink .navbar-expand-lg .navbar-nav .nav-link {
@@ -8167,6 +8169,7 @@ table {
         position: fixed;
         top: 49px;
         z-index: 9999;
+        /* z-index: -1; */
         width: 100%;
         background: rgba(12,12,12,0.1);
     }
@@ -8392,6 +8395,7 @@ table {
 
     .sticky-header {
         top: 0;
+        /* z-index: -1; */
     }
 
     .sorting-options2 h5{
@@ -8964,6 +8968,7 @@ table {
     .sticky-header {
         position: fixed;
         z-index: 9999;
+        /* z-index: -1; */
         width: 100%;
     }
 
@@ -8983,6 +8988,7 @@ table {
     .sticky-header {
         position: fixed;
         z-index: 9999;
+        /* z-index: -1; */
         width: 100%;
         top: 0px;
     }
