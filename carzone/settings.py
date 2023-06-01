@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [carzone-coay.onrender.com]
+ALLOWED_HOSTS = ['carzone-coay.onrender.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 # Application definition
