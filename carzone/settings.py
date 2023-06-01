@@ -90,16 +90,26 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carzone_db_checking',
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST':'localhost',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'carzone_db_checking',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Toom007a',
+#         'HOST':'localhost',
+#     }
+# }
 
+# Render PostgreSQL database (Live)
+import dj_database_url
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+DATABASES = {
+    'default': dj_database_url.parse(env('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -162,6 +172,6 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 # Email setting
 EMAIL_HOST = 'smtp.gmail.com' # เราจะส่งอีเมล์ด้วย smtp ของ Gmail
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'ipathsaid@gmail.com'
+EMAIL_HOST_PASSWORD = 'tfwgidmpdosbdwgw'
 EMAIL_USE_TLS = True
